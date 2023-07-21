@@ -1,0 +1,4 @@
+"C:\WorkSpace\Prokop_A22B0330P\Prokop_A22B0330P\main.s"
+-I "C:\WorkSpace\Prokop_A22B0330P\Prokop_A22B0330P"
+--gdwarf2
+-o "C:\WorkSpace\Prokop_A22B0330P\Prokop_A22B0330P\Debug\main.o"

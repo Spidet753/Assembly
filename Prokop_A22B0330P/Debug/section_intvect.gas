@@ -1,0 +1,4 @@
+"C:\WorkSpace\Prokop_A22B0330P\Prokop_A22B0330P\section_intvect.s"
+-I "C:\WorkSpace\Prokop_A22B0330P\Prokop_A22B0330P"
+--gdwarf2
+-o "C:\WorkSpace\Prokop_A22B0330P\Prokop_A22B0330P\Debug\section_intvect.o"
