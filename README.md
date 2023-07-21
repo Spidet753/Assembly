@@ -1,8 +1,10 @@
 Zadání 
+
 Napište program, který převede zadané číslo uint16 do požadované číselné soustavy zadané 
 uživatelem.
 
 Řešení 
+
 Po získání vstupů od uživatele bylo zapotřebí tyto vstupy převést do hexadecimální podoby, aby se 
 s nimi mohlo snáze pracovat, poté jsou v registrech uložena dvě čísla, a to uint16 číslo a číslo 
 požadované soustavy v hexadecimální soustavě. Dále jsem tyto dvě čísla mezi sebou dělil, a to do té 
@@ -13,13 +15,16 @@ musíme brát zbytky v pořadí opačném, a nakonec tyto čísla ještě řádn
 aby byl výsledek dobře čitelný pro uživatele.
 
 Spuštění programu 
+
 Program je psán v assembleru a je psán pro procesor H8S a je přeložitelný a spustitelný v prostředí 
 HEW.
 
 Program 
+
 Program se dělí na dvě části, a to na datový segment a kódový segment.
 
 Datový segment 
+
 V datovém segmentu nadefinujeme jména proměnných s vyhrazeným místem pro ně a to: 
 pozadovana_soustava a uint16, do kterých se budou ukládat hodnoty zadané uživatelem. Uživatel 
 hodnoty zadává do terminálu po za sebou vyskakujících promptech (prompt1 a prompt2). Dále 
@@ -27,6 +32,7 @@ definujeme parametrické bloky a inicializuje zásobník stck s align 1. Poté n
 segment.
 
 Kódový segment 
+
 Zde budu popisovat funkčnost celého kódového segmentu, nejdůležitější podprogramy vždy uvedu 
 na samostatný řádek.
 
@@ -77,10 +83,12 @@ jen na jeden řádek.
 V tomhle kroku program skočí na konec a v registrech ER0 – ER2 se nachází výsledek programu.
 
 Proměnné 
+
 pozadovana_soustava FF4000
 uint16 FF4083
 
 Obsah registru SP 
+
 pocetCifer 00FF4170
 prevodNaHex 00FF4170
 zadani_uint 00FF4174
